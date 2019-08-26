@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Red Hat Display'), local('RedHatDisplay-Regular'), url(https://fonts.gstatic.com/s/redhatdisplay/v1/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6k.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Red Hat Display Medium'), local('RedHatDisplay-Medium'), url(https://fonts.gstatic.com/s/redhatdisplay/v1/8vIV7wUr0m80wwYf0QCXZzYzUoToDh20aqrF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Work Sans Light'), local('WorkSans-Light'), url(https://fonts.gstatic.com/s/worksans/v5/QGYpz_wNahGAdqQ43Rh314L8mNhI.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Work Sans'), local('WorkSans-Regular'), url(https://fonts.gstatic.com/s/worksans/v5/QGYsz_wNahGAdqQ43Rh_fKDs.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(https://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ5qnJyo.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -131,6 +166,39 @@ table {
 }
 html {
   font-size: 62.5%;
+  margin: 0 auto;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: #3d4d41;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+nav .logo {
+  margin-left: 2%;
+  font-size: 3.5rem;
+  color: #fff;
+  font-family: 'Red Hat Display', sans-serif;
+}
+nav .link {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 2rem;
+}
+nav .link a {
+  text-decoration: none;
+  color: #c6dad5;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+}
+nav .link a:hover {
+  color: #b1b0b0;
+  border-bottom: 1px solid #acabab;
 }
 header img {
   height: 700px;
@@ -161,9 +229,69 @@ header h1 {
   font-size: 4rem;
   padding: 10px 30px;
   text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
 }
-header h3 {
+header p {
   padding: 10px 30px;
   text-align: center;
   font-size: 2rem;
+  font-family: 'Work Sans', sans-serif;
+}
+#how-it-works-top {
+  display: flex;
+}
+#how-it-works-top .hiw-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 6% 0%;
+  width: 100%;
+}
+#how-it-works-top img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+#how-it-works-top .hiw-left-top {
+  width: 48%;
+  background-color: #5c8276;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#how-it-works-top .hiw-left-top h1 {
+  font-size: 3rem;
+}
+#how-it-works-top .hiw-left-top p {
+  font-size: 2.3rem;
+}
+#how-it-works-top .hiw-right-top {
+  width: 48%;
+}
+#how-it-works-middle .hiw-wrap-middle {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 6%;
+}
+#how-it-works-middle img {
+  height: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+#how-it-works-middle .hiw-left-middle {
+  width: 48%;
+}
+#how-it-works-middle .hiw-right-middle {
+  width: 48%;
+  background-color: #5c8276;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#how-it-works-middle .hiw-right-middle h1 {
+  font-size: 3rem;
+}
+#how-it-works-middle .hiw-right-middle p {
+  font-size: 2.3rem;
 }

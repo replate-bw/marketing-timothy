@@ -1,0 +1,44 @@
+nav {
+     display: flex;
+     justify-content: space-between;
+     padding:20px 0;
+     background-color: @dark;
+     position: fixed;
+     width: 100%;
+     z-index: 999;
+
+    .logo{
+        margin-left:2%;
+        font-size: 3.5rem;
+        color:#fff;
+        font-family: @logo;
+        
+    }
+    .link{
+        width:50%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 2rem;
+       
+       
+        a{
+            text-decoration: none;
+            color:@navLink;
+            font-family: @subFont;
+            font-weight: 100;
+           
+        &:active{
+            // border-bottom:1px solid black;
+        }
+           
+        
+        &:hover{
+            color:#A1CCAC;
+            border-bottom:1px solid rgb(172, 171, 171);
+
+        }
+        }
+    }
+    
+}

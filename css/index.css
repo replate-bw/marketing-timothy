@@ -200,15 +200,22 @@ nav .link a:hover {
   color: #A1CCAC;
   border-bottom: 1px solid #acabab;
 }
+footer {
+  color: #fff;
+}
 footer .foot-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 300px;
   width: 100%;
-  background-color: #A1CCAC;
-  margin-top: 20px;
+  background-color: #202221;
+}
+footer h1 {
+  font-size: 1.8rem;
 }
 body {
   font-family: 'Work Sans', sans-serif;
-  color: #B3696E;
 }
 header img {
   height: 700px;
@@ -231,7 +238,33 @@ header .box-info-head {
   background-color: white;
   height: 300px;
   width: 700px;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+header .info-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header button {
+  padding: 17px 90px;
+  border-radius: 35px;
+  background-color: #577960;
+  border: 2px solid #fff;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  margin-top: 3%;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 25px 78px -19px #000000;
+  -moz-box-shadow: 1px 25px 78px -19px #000000;
+  box-shadow: 1px 25px 78px -19px #000000;
+}
+header button:focus {
+  outline: none;
+}
+header button:hover {
+  background-color: #486350;
 }
 header h1 {
   color: #B3696E;
@@ -352,4 +385,86 @@ header p {
 }
 #how-it-works-bottom .hiw-right-bottom {
   width: 48%;
+}
+#testimonials {
+  margin-top: 30px;
+  background-color: #A1CCAC;
+  color: #fff;
+  text-align: center;
+}
+#testimonials .testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+#testimonials p {
+  margin-top: 3%;
+  font-size: 1.2rem;
+}
+#testimonials .row {
+  margin: 100px;
+}
+#testimonials .container-fluid {
+  padding: 7% 15%;
+}
+#testimonials .big-heading {
+  font-family: "Montserrat";
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+#testimonials .section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+  color: red;
+}
+#carousel-info .carousel-info-wrap {
+  background-color: #A1CCAC;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-direction: row;
+}
+#carousel-info img {
+  width: 15%;
+  margin: 40px 8%;
+}
+#download {
+  background-color: #eef7f1;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#download .button-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#download .dark-button {
+  background-color: black;
+  color: #fff;
+  padding: 20px 60px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+#download .light-button {
+  padding: 20px 60px;
+  border-radius: 10px;
+  margin-left: 40px;
+  font-size: 2rem;
+}
+#download .light-button:active {
+  outline: none;
+}
+#download h1 {
+  padding: 2%;
+  color: #3a3737;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+#download .fab {
+  font-size: 2.5rem;
+  margin-right: 20px;
 }

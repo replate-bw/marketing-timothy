@@ -1,6 +1,6 @@
 body{
     font-family: @subFont;
-    color:#B3696E;
+    // color:#B3696E;
 }
 header{
     
@@ -14,7 +14,7 @@ header{
         border:2px solid black;
     }
     .box-info-head{
-        .center();
+        .center(); 
         position: absolute;
         top: 60%;
         left: 50%;
@@ -22,11 +22,33 @@ header{
         background-color: white;
         height: 300px;
         width:700px;
-        opacity: .8;
+        opacity: .9;
         
     }
     .info-head{
-        // background:red;
+        .center();
+    }
+    button {
+        padding:17px 90px;
+        border-radius: 35px;
+        background-color:rgb(87, 121, 96);
+        border:2px solid #fff;
+        color:#fff;
+        letter-spacing: 2px;
+        font-size: 2.5rem;
+        margin-top:3%;
+        cursor: pointer;
+        -webkit-box-shadow: 1px 25px 78px -19px rgba(0,0,0,1);
+        -moz-box-shadow: 1px 25px 78px -19px rgba(0,0,0,1);
+        box-shadow: 1px 25px 78px -19px rgba(0,0,0,1);
+    
+    &:focus {
+        outline:none;
+       
+    }
+    &:hover{
+        background-color:rgb(72, 99, 80);
+    }
     }
    
     h1{
@@ -164,5 +186,95 @@ header{
     }
     .hiw-right-bottom{
         width:48%;
+    }
+}
+
+
+#testimonials {
+    margin-top:30px;
+    background-color: #A1CCAC;
+    color: #fff;
+    text-align: center;
+
+    .testimonial-text {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+    p{
+        margin-top: 3%;
+        font-size: 1.2rem;
+    }
+
+    .row {
+        margin: 100px;
+    }
+
+    .container-fluid {
+        
+        padding: 7% 15%;
+    }
+
+    .big-heading {
+        font-family: "Montserrat";
+        font-size: 3.5rem;
+        line-height: 1.5;
+
+    }
+
+    .section-heading {
+        font-size: 3rem;
+        line-height: 1.5;
+        color:red;
+    }
+}
+
+#carousel-info{
+
+    .carousel-info-wrap{
+        background-color:#A1CCAC;
+        height:200px;
+        .center();
+        flex-direction:row;
+    }
+    img{
+        width:15%;
+        margin:40px 8%;
+    }
+}
+
+#download{
+    background-color: rgb(238, 247, 241);
+    height: 600px;
+    .center();
+    .button-wrap{
+        .center-row();
+    }
+    .dark-button{
+        background-color: black;
+        // border:1px solid black;
+        color:#fff;
+        padding:20px 60px;
+        border-radius: 10px;
+        font-size: 2rem
+    }
+    .light-button{
+        padding:20px 60px;
+        border-radius: 10px;
+        margin-left: 40px;
+        font-size: 2rem;
+
+        &:active{
+            outline: none;
+        }
+    }
+    h1{
+        padding:2%;
+        color:rgb(58, 55, 55);
+        margin-bottom: 20px;
+        font-size: 4rem;
+    }
+    .fab{
+     font-size: 2.5rem;
+     margin-right: 20px;
     }
 }

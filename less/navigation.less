@@ -3,15 +3,25 @@ nav {
      justify-content: space-between;
      padding:20px 0;
      background-color: @dark;
-     position: fixed;
+    //  position: fixed;
      width: 100%;
      z-index: 999;
+     @media @mobile{
+        .column();
+        
+        position: relative;
+        opacity: .9;
+    }
 
     .logo{
         margin-left:2%;
         font-size: 3.5rem;
         color:#fff;
         font-family: @logo;
+
+        @media @mobile{
+           margin-bottom: 10px;
+        }
         
     }
     .link{
@@ -20,6 +30,12 @@ nav {
         justify-content: space-evenly;
         align-items: center;
         font-size: 2rem;
+
+        @media @mobile{
+            .column();
+            margin-left:35px;
+            
+        }
        
        
         a{
@@ -27,6 +43,12 @@ nav {
             color:@navLink;
             font-family: @subFont;
             font-weight: 100;
+            margin:10px 20px;
+
+            @media @mobile{
+                margin:10px;
+                
+            }
            
         &:active{
             // border-bottom:1px solid black;
@@ -42,3 +64,27 @@ nav {
     }
     
 }
+
+.burMenu{
+    position: absolute;
+    right:20px;
+    top:20px;
+    }
+    
+    .burger{
+      display: none;
+      @media @mobile{
+          display: block;
+      }
+    }
+ 
+    .burger div{
+        width:23px;
+        height: 4px;
+        background-color:#fff;
+        margin:4px;
+      }
+    #burgerMenu{
+        margin:0;
+        display: block;
+    }

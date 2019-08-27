@@ -1,0 +1,96 @@
+
+
+
+.team-layout{
+    .column();
+    .team-wrap{
+        .center();
+        height:100%;
+        margin-top: 150px;
+    }
+    h1{
+        font-size: 5rem;
+        color:#000;
+    }
+    p{
+        font-size: 1.8rem;
+        margin:20px 16%;
+        line-height: 1.5;
+        text-align: center;
+    }
+    
+}
+#team-info{
+
+    .team-info-wrap{
+        .center-row();
+        @media @mobile{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    img{
+        height:250px;
+        width:335px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+        box-shadow: 0 8px 6px -3px rgba(101, 101, 101, 0.55);
+    }
+    p{
+        font-size: 2.2rem;
+        letter-spacing: 1.2px;
+        margin-bottom: 10px;
+        margin-top:20px;
+    }
+    .social{
+        .center-row();
+        width:100%;
+        margin-top:10px;
+    }
+    .fab{
+        padding: 3px;
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 20px;
+    }
+    .fa-github-alt{
+        color:black;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .fa-linkedin{
+        color:#000;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    .fa-envelope{
+        color:#000;
+        border:1px solid black;
+        border-radius: 10px;
+    }
+    
+    .fas{
+        padding: 3px;
+        font-size: 3rem;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 20px;
+    }
+
+    .team-container{
+        .column();
+        padding: 2%;
+        margin-bottom: 30px;
+    }
+    .team-container2{
+        .column();
+        margin-bottom: 100px;
+        padding:2%;
+
+        @media @mobile{
+            margin-bottom:40px;
+        }
+    }
+
+}

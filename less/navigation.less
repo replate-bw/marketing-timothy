@@ -33,6 +33,7 @@ nav {
 
         @media @mobile{
             .column();
+            margin-left:35px;
             
         }
        
@@ -42,6 +43,7 @@ nav {
             color:@navLink;
             font-family: @subFont;
             font-weight: 100;
+            margin:10px 20px;
 
             @media @mobile{
                 margin:10px;
@@ -62,3 +64,27 @@ nav {
     }
     
 }
+
+.burMenu{
+    position: absolute;
+    right:20px;
+    top:20px;
+    }
+    
+    .burger{
+      display: none;
+      @media @mobile{
+          display: block;
+      }
+    }
+ 
+    .burger div{
+        width:23px;
+        height: 4px;
+        background-color:#fff;
+        margin:4px;
+      }
+    #burgerMenu{
+        margin:0;
+        display: block;
+    }

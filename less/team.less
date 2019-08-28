@@ -6,7 +6,7 @@
     .team-wrap{
         .center();
         height:100%;
-        margin-top: 150px;
+        margin-top: 50px;
     }
     h1{
         font-size: 5rem;
@@ -14,7 +14,7 @@
     }
     p{
         font-size: 1.8rem;
-        margin:20px 16%;
+        margin:60px 16%;
         line-height: 1.5;
         text-align: center;
     }
@@ -29,50 +29,88 @@
             flex-wrap: wrap;
         }
     }
+    .team-container{
+        background-color:@card;
+        margin-right:40px;
+        height:400px;
+        width:270px;
+        margin-bottom: 1000px;
+        margin-top: 150px;
+        border-radius: 20px;
+    }
+    .team-container1{
+        .center();
+        background-color: @card;
+        margin-top:150px;
+        margin-right: 40px;
+        height:400px;
+        width:270px;
+        border-radius: 20px;
+        
+    }
+    .team-container2{
+        margin-top:160px;
+        background-color: @card;
+        height:400px;
+        width:270px;
+        margin-right: 40px;
+        border-radius: 20px;
+    }
+
+
+
     img{
-        height:250px;
-        width:335px;
-        border-radius: 15px;
-        margin-bottom: 10px;
-        box-shadow: 0 8px 6px -3px rgba(101, 101, 101, 0.55);
+        height:200px;
+        width:200px;
+        border-radius: 50%;
+        margin-top: -200px;
+        box-shadow: 0 8px 6px -3px rgba(101, 101, 101, 0.95);
+        
     }
     p{
         font-size: 2.2rem;
         letter-spacing: 1.2px;
         margin-bottom: 10px;
-        margin-top:20px;
+        margin-top:10px;
+        border-bottom: 1px solid #000;
+    }
+    h4{
+        font-size: 1.8rem;
+        text-align: center;
+        margin-top:30px;
     }
     .social{
         .center-row();
         width:100%;
-        margin-top:10px;
+        margin-bottom:-100px;
+        margin-top: 20px;
     }
     .fab{
-        padding: 3px;
-        font-size: 3rem;
+        padding: 2px;
+        font-size: 2.5rem;
         text-align: center;
         text-decoration: none;
         margin: 5px 20px;
     }
     .fa-github-alt{
-        color:black;
-        border:1px solid black;
+        color:@social;
+        border:1px solid @social;
         border-radius: 10px;
     }
     .fa-linkedin{
-        color:#000;
-        border:1px solid black;
+        color:@social;
+        border:1px solid @social;
         border-radius: 10px;
     }
     .fa-envelope{
-        color:#000;
-        border:1px solid black;
+        color:@social;
+        border:1px solid @social;
         border-radius: 10px;
     }
     
     .fas{
-        padding: 3px;
-        font-size: 3rem;
+        padding: 2px;
+        font-size: 2.3rem;
         text-align: center;
         text-decoration: none;
         margin: 5px 20px;

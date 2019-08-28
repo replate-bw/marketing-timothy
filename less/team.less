@@ -11,6 +11,10 @@
     h1{
         font-size: 5rem;
         color:#000;
+        
+        @media @mobile{
+            font-size: 3rem;
+        }
     }
     p{
         font-size: 1.8rem;
@@ -27,6 +31,7 @@
         @media @mobile{
             display: flex;
             flex-wrap: wrap;
+            margin:0;
         }
     }
     .team-container{
@@ -37,6 +42,10 @@
         margin-bottom: 1000px;
         margin-top: 150px;
         border-radius: 20px;
+
+        @media @mobile{
+            margin: 100px 0;
+        }
     }
     .team-container1{
         .center();
@@ -46,6 +55,10 @@
         height:400px;
         width:270px;
         border-radius: 20px;
+
+        @media @mobile{
+            margin: 100px 0 40px;
+        }
         
     }
     .team-container2{
@@ -55,16 +68,19 @@
         width:270px;
         margin-right: 40px;
         border-radius: 20px;
+
+        @media @mobile{
+            margin: 100px 0 40px;
+        }
     }
-
-
 
     img{
         height:200px;
         width:200px;
         border-radius: 50%;
         margin-top: -200px;
-        box-shadow: 0 8px 6px -3px rgba(101, 101, 101, 0.95);
+        box-shadow: 0 8px 6px -3px rgba(101, 101, 101, 0.15);
+        border:3px solid #f1f1f1;
         
     }
     p{
@@ -72,12 +88,16 @@
         letter-spacing: 1.2px;
         margin-bottom: 10px;
         margin-top:10px;
-        border-bottom: 1px solid #000;
+    }
+    .tag{
+        font-size: 1.4rem;
+        text-align: center;
+        margin:2% 3%;
     }
     h4{
         font-size: 1.8rem;
         text-align: center;
-        margin-top:30px;
+        margin:10px;
     }
     .social{
         .center-row();

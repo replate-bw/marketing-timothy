@@ -33,6 +33,12 @@
   font-display: swap;
   src: local('Lexend Deca Regular'), local('LexendDeca-Regular'), url(https://fonts.gstatic.com/s/lexenddeca/v1/K2F1fZFYk-dHSE0UPPuwQ5qnJyo.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -174,83 +180,37 @@ nav {
   padding: 20px 0;
   background-color: #3d4d41;
   width: 100%;
-  z-index: 999;
 }
-@media (max-width: 500px) {
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    opacity: 0.9;
-  }
-}
-nav .logo {
-  margin-left: 2%;
+nav .navbar-brand {
   font-size: 3.5rem;
+  margin: 10px;
+}
+nav .nav-link {
   color: #fff;
-  font-family: 'Red Hat Display', sans-serif;
 }
-@media (max-width: 500px) {
-  nav .logo {
-    margin-bottom: 10px;
-  }
-}
-nav .link {
-  width: 50%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+nav .nav-item {
+  color: #fff;
+  margin: 20px;
   font-size: 2rem;
 }
+nav .nav-item:hover {
+  border-bottom: 1px solid #fff;
+}
 @media (max-width: 500px) {
-  nav .link {
+  nav .nav-item:hover {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  nav .nav-item {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-left: 35px;
   }
 }
-nav .link a {
-  text-decoration: none;
-  color: #c6dad5;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 100;
-  margin: 10px 20px;
-}
-@media (max-width: 500px) {
-  nav .link a {
-    margin: 10px;
-  }
-}
-nav .link a:hover {
-  color: #A1CCAC;
-  border-bottom: 1px solid #acabab;
-}
-.burMenu {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-}
-.burger {
-  display: none;
-}
-@media (max-width: 500px) {
-  .burger {
-    display: block;
-  }
-}
-.burger div {
-  width: 23px;
-  height: 4px;
-  background-color: #fff;
-  margin: 4px;
-}
-#burgerMenu {
-  margin: 0;
-  display: block;
+nav .nav-item .navbar-toggler button {
+  color: #fff;
 }
 footer {
   color: #fff;
@@ -756,8 +716,10 @@ header p {
   margin-top: 50px;
 }
 .team-layout h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   color: #000;
+  font-family: 'Lora Slab', serif;
+  font-weight: 100;
 }
 @media (max-width: 500px) {
   .team-layout h1 {

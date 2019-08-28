@@ -724,7 +724,7 @@ header p {
   color: #000;
   font-family: 'Lora Slab', serif;
   font-weight: 100;
-  margin-bottom: 50px;
+  margin: 40px 0 90px;
 }
 @media (max-width: 500px) {
   .team-layout h1 {

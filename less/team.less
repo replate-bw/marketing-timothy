@@ -13,6 +13,7 @@
         color:#000;
         font-family: @team;
         font-weight: 100;
+        margin-bottom: 50px;
         
         @media @mobile{
             font-size: 3rem;
@@ -26,131 +27,92 @@
     }
     
 }
-#team-info{
 
-    .team-info-wrap{
-        .center-row();
-        @media @mobile{
-            display: flex;
-            flex-wrap: wrap;
-            margin:0;
-        }
-    }
-    .team-container{
-        background-color:@card;
-        margin-right:40px;
-        height:400px;
-        width:270px;
-        margin-bottom: 1000px;
-        margin-top: 150px;
-        border-radius: 20px;
 
-        @media @mobile{
-            margin: 100px 0;
-        }
-    }
-    .team-container1{
-        .center();
-        background-color: @card;
-        margin-top:150px;
-        margin-right: 40px;
-        height:400px;
-        width:270px;
-        border-radius: 20px;
-
-        @media @mobile{
-            margin: 100px 0 40px;
-        }
-        
-    }
-    .team-container2{
-        margin-top:160px;
-        background-color: @card;
-        height:400px;
-        width:270px;
-        margin-right: 40px;
-        border-radius: 20px;
-
-        @media @mobile{
-            margin: 100px 0 40px;
-        }
-    }
-
-    img{
-        height:200px;
-        width:200px;
-        border-radius: 50%;
-        margin-top: -200px;
-        box-shadow: 0 8px 6px -3px rgba(101, 101, 101, 0.15);
-        border:3px solid #f1f1f1;
-        
-    }
-    p{
-        font-size: 2.2rem;
-        letter-spacing: 1.2px;
-        margin-bottom: 10px;
-        margin-top:10px;
-    }
-    .tag{
-        font-size: 1.4rem;
-        text-align: center;
-        margin:2% 3%;
-    }
-    h4{
-        font-size: 1.8rem;
-        text-align: center;
-        margin:10px;
-    }
-    .social{
-        .center-row();
-        width:100%;
-        margin-bottom:-100px;
-        margin-top: 20px;
-    }
-    .fab{
-        padding: 2px;
-        font-size: 2.5rem;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 20px;
-    }
-    .fa-github-alt{
-        color:@social;
-        border:1px solid @social;
-        border-radius: 10px;
-    }
-    .fa-linkedin{
-        color:@social;
-        border:1px solid @social;
-        border-radius: 10px;
-    }
-    .fa-envelope{
-        color:@social;
-        border:1px solid @social;
-        border-radius: 10px;
+.cardTime{
+    .center-row();
+    @media @mobile{
+        flex-wrap:wrap;
     }
     
-    .fas{
-        padding: 2px;
-        font-size: 2.3rem;
+    .cardTime-wrap{
+        .center();
+        margin:60px 30px;
+        margin-top:50px;
+        height:50%;
+        width: 300px;
+        background-color:@card;
+        border-radius: 10px;
+        box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        -webkit-box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        -moz-box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+    }
+    .cardTime-wrap2{
+        .center();
+        height:40%;
+        width: 300px;
+        background-color:@card;
+        margin:60px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        -webkit-box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        -moz-box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+    }
+    .cardTime-wrap3{
+        .center();
+        height:40%;
+        width: 300px;
+        background-color:@card;
+        margin:60px 30px;
+        border-radius: 10px;
+        box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        -webkit-box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        -moz-box-shadow: 0px 11px 46px -11px rgba(105,98,98,0.73);
+        
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        margin-top:-50px;
+        border-radius: 50%;
+        border:3px solid #f1f1f1;
+    }
+    h2{
+        font-size: 2.4rem;
         text-align: center;
+        margin:20px 0;
+        text-decoration: underline;
+    }
+    h3{
+        font-size: 2rem;
+        margin:20px 10px 40px;
+        text-align: center;
+    }
+    p{
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        text-align: center;
+        margin:0 5%;
+        color:@light;
+        font-family:@team;
+    }
+    .fab{
+        font-size:3rem;
+        color:@social;
+        margin:70px 20px 30px;
+    &:hover{
         text-decoration: none;
-        margin: 5px 20px;
     }
 
-    .team-container{
-        .column();
-        padding: 2%;
-        margin-bottom: 30px;
     }
-    .team-container2{
-        .column();
-        margin-bottom: 100px;
-        padding:2%;
+    .fas{
+        font-size: 3rem;
+        color:@social;
+        margin:20px;
 
-        @media @mobile{
-            margin-bottom:40px;
+        &:hover{
+            text-decoration: none;
         }
     }
-
 }

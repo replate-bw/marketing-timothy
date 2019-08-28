@@ -7,4 +7,6 @@ function burgerDisplay() {
     } else {
       x.style.display = "block";
     }
-  }
+    
+}
+

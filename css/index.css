@@ -39,6 +39,12 @@
   font-weight: 400;
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -266,7 +272,6 @@ header img {
 }
 header .wrap-head {
   position: relative;
-  border: 2px solid black;
 }
 header .box-info-head {
   display: flex;
@@ -442,7 +447,7 @@ header p {
 #how-it-works-middle .hiw-wrap-middle {
   display: flex;
   justify-content: space-around;
-  margin: 20px 6% ;
+  margin: 20px 6%;
 }
 @media (max-width: 500px) {
   #how-it-works-middle .hiw-wrap-middle {
@@ -722,7 +727,7 @@ header p {
 .team-layout h1 {
   font-size: 6rem;
   color: #000;
-  font-family: 'Lora Slab', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 100;
   margin: 40px 0 90px;
 }
@@ -756,11 +761,15 @@ header p {
   margin-top: 50px;
   height: 50%;
   width: 300px;
-  background-color: #8dab9f;
+  background-color: #84a58b;
   border-radius: 10px;
   box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -webkit-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -moz-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.cardTime .cardTime-wrap:hover {
+  transform: scale(1.1);
 }
 .cardTime .cardTime-wrap2 {
   display: flex;
@@ -769,12 +778,16 @@ header p {
   flex-direction: column;
   height: 40%;
   width: 300px;
-  background-color: #8dab9f;
+  background-color: #84a58b;
   margin: 60px 30px;
   border-radius: 10px;
   box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -webkit-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -moz-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.cardTime .cardTime-wrap2:hover {
+  transform: scale(1.1);
 }
 .cardTime .cardTime-wrap3 {
   display: flex;
@@ -783,12 +796,16 @@ header p {
   flex-direction: column;
   height: 40%;
   width: 300px;
-  background-color: #8dab9f;
+  background-color: #84a58b;
   margin: 60px 30px;
   border-radius: 10px;
   box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -webkit-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -moz-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.cardTime .cardTime-wrap3:hover {
+  transform: scale(1.1);
 }
 .cardTime img {
   height: 200px;
@@ -800,35 +817,44 @@ header p {
 .cardTime h2 {
   font-size: 2.4rem;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0px;
   text-decoration: underline;
 }
 .cardTime h3 {
   font-size: 2rem;
   margin: 20px 10px 40px;
   text-align: center;
+  color: #323131;
 }
 .cardTime p {
   font-size: 1.8rem;
   letter-spacing: 1px;
   line-height: 1.2;
   text-align: center;
-  margin: 0 5%;
+  margin: 0 8%;
   color: #fff;
-  font-family: 'Lora Slab', serif;
+  font-weight: 100;
 }
 .cardTime .fab {
   font-size: 3rem;
-  color: #475d76;
+  color: #84a58b;
+  background-color: #f1f1f1;
   margin: 70px 20px 30px;
+  border: 1px solid #f1f1f1;
+  border-radius: 15%;
+  padding: 5px;
 }
 .cardTime .fab:hover {
   text-decoration: none;
 }
 .cardTime .fas {
   font-size: 3rem;
-  color: #475d76;
+  color: #84a58b;
+  background-color: #f1f1f1;
   margin: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 15%;
+  padding: 5px;
 }
 .cardTime .fas:hover {
   text-decoration: none;

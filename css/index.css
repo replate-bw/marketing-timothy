@@ -39,6 +39,12 @@
   font-weight: 400;
   src: local('Lora Regular'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7Jg.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/oswald/v24/TK3_WkUHHAIjg75cFRf3bXL8LICs1_FvsUZiYA.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -196,12 +202,17 @@ nav .nav-item {
 nav .nav-item:hover {
   border-bottom: 1px solid #fff;
 }
-@media (max-width: 500px) {
+@media (max-width:800px) {
   nav .nav-item:hover {
     border: none;
   }
 }
 @media (max-width: 500px) {
+  nav .nav-item:hover {
+    border: none;
+  }
+}
+@media (max-width:800px) {
   nav .nav-item {
     display: flex;
     justify-content: center;
@@ -266,7 +277,6 @@ header img {
 }
 header .wrap-head {
   position: relative;
-  border: 2px solid black;
 }
 header .box-info-head {
   display: flex;
@@ -328,9 +338,15 @@ header h1 {
   line-height: 1.1;
   font-family: 'Lexend Deca', sans-serif;
 }
+@media (max-width:800px) {
+  header h1 {
+    font-size: 3rem;
+    margin: 0 4%;
+  }
+}
 @media (max-width: 500px) {
   header h1 {
-    font-size: 2.6rem;
+    font-size: 2.7rem;
   }
 }
 header p {
@@ -442,7 +458,7 @@ header p {
 #how-it-works-middle .hiw-wrap-middle {
   display: flex;
   justify-content: space-around;
-  margin: 20px 6% ;
+  margin: 20px 6%;
 }
 @media (max-width: 500px) {
   #how-it-works-middle .hiw-wrap-middle {
@@ -615,7 +631,6 @@ header p {
 #testimonials .section-heading {
   font-size: 3rem;
   line-height: 1.5;
-  color: red;
 }
 #carousel-info .carousel-info-wrap {
   background-color: #A1CCAC;
@@ -648,6 +663,11 @@ header p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width:800px) {
+  #download .button-wrap {
+    margin: 0 10%;
+  }
 }
 @media (max-width: 500px) {
   #download .button-wrap {
@@ -722,13 +742,13 @@ header p {
 .team-layout h1 {
   font-size: 6rem;
   color: #000;
-  font-family: 'Lora Slab', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 100;
   margin: 40px 0 90px;
 }
 @media (max-width: 500px) {
   .team-layout h1 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 .team-layout p {
@@ -747,6 +767,11 @@ header p {
     flex-wrap: wrap;
   }
 }
+@media (max-width:800px) {
+  .cardTime {
+    flex-wrap: wrap;
+  }
+}
 .cardTime .cardTime-wrap {
   display: flex;
   justify-content: center;
@@ -754,41 +779,53 @@ header p {
   flex-direction: column;
   margin: 60px 30px;
   margin-top: 50px;
-  height: 50%;
+  height: 450px;
   width: 300px;
-  background-color: #8dab9f;
+  background-color: #7f9684;
   border-radius: 10px;
   box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -webkit-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -moz-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.cardTime .cardTime-wrap:hover {
+  transform: scale(1.1);
 }
 .cardTime .cardTime-wrap2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 40%;
+  height: 450px;
   width: 300px;
-  background-color: #8dab9f;
+  background-color: #7f9684;
   margin: 60px 30px;
   border-radius: 10px;
   box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -webkit-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -moz-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.cardTime .cardTime-wrap2:hover {
+  transform: scale(1.1);
 }
 .cardTime .cardTime-wrap3 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 40%;
+  height: 450px;
   width: 300px;
-  background-color: #8dab9f;
+  background-color: #7f9684;
   margin: 60px 30px;
   border-radius: 10px;
   box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -webkit-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
   -moz-box-shadow: 0px 11px 46px -11px rgba(105, 98, 98, 0.73);
+  transition: all 0.2s ease-in-out;
+}
+.cardTime .cardTime-wrap3:hover {
+  transform: scale(1.1);
 }
 .cardTime img {
   height: 200px;
@@ -800,36 +837,56 @@ header p {
 .cardTime h2 {
   font-size: 2.4rem;
   text-align: center;
-  margin: 20px 0;
+  margin: 20px 0px;
   text-decoration: underline;
+  color: #525050;
 }
 .cardTime h3 {
   font-size: 2rem;
   margin: 20px 10px 40px;
   text-align: center;
+  color: #525050;
 }
 .cardTime p {
   font-size: 1.8rem;
   letter-spacing: 1px;
   line-height: 1.2;
   text-align: center;
-  margin: 0 5%;
+  margin: 0 8%;
   color: #fff;
-  font-family: 'Lora Slab', serif;
+  font-weight: 100;
 }
 .cardTime .fab {
   font-size: 3rem;
-  color: #475d76;
+  color: #7f9684;
+  background-color: #f1f1f1;
   margin: 70px 20px 30px;
+  border: 1px solid #f1f1f1;
+  border-radius: 15%;
+  padding: 5px;
 }
 .cardTime .fab:hover {
   text-decoration: none;
 }
+@media (max-width:1024px) {
+  .cardTime .fab {
+    margin: 70px 10px;
+  }
+}
 .cardTime .fas {
   font-size: 3rem;
-  color: #475d76;
+  color: #7f9684;
+  background-color: #f1f1f1;
   margin: 20px;
+  border: 1px solid #f1f1f1;
+  border-radius: 15%;
+  padding: 5px;
 }
 .cardTime .fas:hover {
   text-decoration: none;
+}
+@media (max-width:1024px) {
+  .cardTime .fas {
+    margin: 70px 10px;
+  }
 }

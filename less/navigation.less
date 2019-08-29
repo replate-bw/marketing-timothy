@@ -22,12 +22,16 @@ nav {
         &:hover {
             border-bottom: 1px solid #fff;
 
+            @media @tablet{
+                border: none;
+            }
+
             @media @mobile {
                 border: none;
             }
         }
 
-        @media @mobile {
+        @media @tablet{
             .center();
         }
 

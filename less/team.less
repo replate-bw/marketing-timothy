@@ -1,3 +1,7 @@
+// body {
+//     font-family: @subFont;
+//     background-color: #f1f1f1;
+// }
 
 
 .team-layout {
@@ -36,13 +40,17 @@
 
     @media @mobile {
         flex-wrap: wrap;
+ 
     }
-
+    @media @tablet{
+        flex-wrap:wrap;
+    }
+   
     .cardTime-wrap {
         .center();
         margin: 60px 30px;
         margin-top: 50px;
-        height: 50%;
+        height: 450px;
         width: 300px;
         background-color: @card;
         border-radius: 10px;
@@ -59,7 +67,7 @@
 
     .cardTime-wrap2 {
         .center();
-        height: 40%;
+        height: 450px;
         width: 300px;
         background-color: @card;
         margin: 60px 30px;
@@ -77,7 +85,7 @@
 
     .cardTime-wrap3 {
         .center();
-        height: 40%;
+        height: 450px;
         width: 300px;
         background-color: @card;
         margin: 60px 30px;
@@ -105,17 +113,15 @@
         font-size: 2.4rem;
         text-align: center;
         margin: 20px 0px;
-        // padding-bottom: 4px;
-        // border-bottom: 1px solid #000;
-        // width:50%;
         text-decoration: underline;
+        color:#525050;
     }
 
     h3 {
         font-size: 2rem;
         margin: 20px 10px 40px;
         text-align: center;
-        color:rgb(50, 49, 49);
+        color:#525050;
     }
 
     p {
